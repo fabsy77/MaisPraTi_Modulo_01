@@ -11,8 +11,6 @@ console.log("3. Exit")
 const option = Number((prompt("Enter a number between 1 and 3. ")));
 
 
-
-
 switch(option){
     case 1:
         console.log("you choose the option 1");
