@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria Grid + Flexbox</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .gallery-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        width: 100%;
+      }
+      .gallery figure {
+        margin: 0;
+        text-align: center;
+      }
+      .gallery img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .gallery figcaption {
+        font-size: 0.9em;
+        margin-top: 5px;
+      }
+
+      @media (max-width: 800px) {
+        .gallery {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 480px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery-container">
+      <div class="gallery">
+        <figure>
+          <img src="./assets/foto1.jpg" alt="cat1" />
+          <figcaption>Cat 1</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/foto2.jpg" alt="cat2" />
+          <figcaption>Cat 2</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/foto3.jpg" alt="cat3" />
+          <figcaption>Cat 3</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/foto4.jpg" alt="cat4" />
+          <figcaption>Cat 4</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/foto5.jpg" alt="cat5" />
+          <figcaption>Cat 5</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/foto6.jpg" alt="cat6" />
+          <figcaption>Cat 6</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/foto7.jpg" alt="cat7" />
+          <figcaption>Cat 7</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/foto8.jpg" alt="cat8" />
+          <figcaption>Cat 8</figcaption>
+        </figure>
+      </div>
+    </div>
+  </body>
+</html>

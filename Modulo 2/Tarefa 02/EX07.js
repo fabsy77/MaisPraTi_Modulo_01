@@ -12,14 +12,11 @@ let produtos = [
 
 // sort() compara os elementos do array e dentro dele uma funcao que compara precos, a e b, que são dois itens do array (dois produtos).
 produtos.sort(function compararPreco(a, b) {
-  if (a.preco < b.preco) {
-    // se a é menor que b  ( a vem antes de b)
+  if (a.preco < b.preco) { // // se a é menor que b  ( a vem antes de b)
     return -1;
-  } else if (a.preco > b.preco) {
-    // se a é maior que b ( b vem antes de a)
+  } else if (a.preco > b.preco) { //// se a é maior que b ( b vem antes de a)
     return 1;
-  } else {
-    // se a é igual a b e mantem a ordem original
+  } else {// se a é igual a b e mantem a ordem original
     return 0;
   }
 });

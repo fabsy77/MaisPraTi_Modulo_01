@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header {
+    background-color: #4b7ae8;
+    color: #f1329b;
+    padding: 15px;
+    margin: 10px;
+    border: 3px solid #0cf217;
+    border-radius: 5rem;
+    text-align: center;
+}
+h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+main {
+    background-color: #f2cde2;
+    color: #f1329b;
+    padding: 15px;
+    margin: 10px;
+    border: 3px dashed #999;
+}
+
+footer {
+    background-color: #4b7ae8;
+    color: #000;
+    padding: auto;
+    margin: 10px;
+    border: 2px solid;
+    text-align: center;
+}
+.destaque {
+    font-style: italic;
+    background-color: #e1b2d8;
+}
+#importante {
+    border-top: 5px solid #00d9ff; 
+    padding-top: 10px; 
+}
